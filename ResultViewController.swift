@@ -8,16 +8,17 @@
 
 import UIKit
 
-class ResultViewController: UIViewController, UITextFieldDelegate {
+class ResultViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!
     
-    var x: String = "吉谷"
+    var x: String = "名前"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let result = x
+ 
+        let result: String = x
+        
         label.text = "こんにちは\(result)さん"
         // Do any additional setup after loading the view.
     }
